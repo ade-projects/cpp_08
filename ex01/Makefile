@@ -5,17 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: adeestev <adeestev@student.42urduliz.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/13 11:39:09 by adeestev          #+#    #+#              #
-#    Updated: 2026/10/13 11:46:25 by adeestev         ###   ########.fr        #
+#    Created: 2026/10/16 12:33:10 by adeestev          #+#    #+#              #
+#    Updated: 2026/10/16 14:27:06 by adeestev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = easyfind
+NAME = span
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
-SRCS = main.cpp
+SRCS = main.cpp\
+	Span.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

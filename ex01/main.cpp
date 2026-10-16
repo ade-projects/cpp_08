@@ -5,27 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adeestev <adeestev@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/13 11:39:13 by adeestev          #+#    #+#             */
-/*   Updated: 2026/10/13 16:00:29 by adeestev         ###   ########.fr       */
+/*   Created: 2026/10/16 12:33:22 by adeestev          #+#    #+#             */
+/*   Updated: 2026/10/16 18:11:38 by adeestev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "easyfind.hpp"
+#include "Span.hpp"
 #include <iostream>
 #include <vector>
-#include <list>
+#include <cstdlib>
+#include <ctime>
 
 int	main(void)
 {
-	std::vector<int> vec;
-	vec.push_back(23);
-	vec.push_back(42);
+	std::cout << "\n - Testing from subject: -\n" << std::endl;
 
+	Span sp = Span(5);
 
+	sp.addNumber(6);
+	sp.addNumber(3);
+	sp.addNumber(17);
+	sp.addNumber(9);
+	sp.addNumber(11);
 
-
-
-
+	std::cout << sp.shortestSpan() << std::endl;
+	std::cout << sp.longestSpan() << std::endl;
 
 	return (0);
 }
